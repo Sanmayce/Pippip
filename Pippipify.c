@@ -1,4 +1,4 @@
-// Pippiify.c, written by Grok, 2025-Jul-25
+// Pippipify.c, written by Grok, 2025-Jul-25
 
 /*
 [sanmayce@d8 hashBBs_ver7]$ gcc Pippipify.c -maes -o Pippipify.elf
