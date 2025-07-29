@@ -126,4 +126,17 @@ FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla:
 	.cfi_endproc
 ```
 
+    
+With the included 'hashBBs_ver8_Fedora.tar.gz' benchmark (being both synthetic and non-synthetic) following 3 charts were created:
+
+Intel 3rd gen CPU:
+<img width="1566" height="1858" alt="i7-IvyBridge" src="https://github.com/user-attachments/assets/c043b392-1c8a-4afb-b009-f5f271cb188c" />
+
+Intel 7th gen CPU:
+<img width="1555" height="1748" alt="i3-KabyLake" src="https://github.com/user-attachments/assets/f032299d-5ad2-4412-8093-8ef28550b365" />
+
+Intel 11th gen CPU:
+<img width="1522" height="1560" alt="i7-Tigerlake" src="https://github.com/user-attachments/assets/28f35a5c-843f-405b-bfae-3c3ab06788e9" />
+
+
 Enfun!
