@@ -127,7 +127,7 @@ FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla:
 ```
 
     
-With the included 'hashBBs_ver8_Fedora.tar.gz' benchmark (being both synthetic and non-synthetic) following 3 charts were created:
+With the included 'hashBBs_ver8_Fedora.tar.gz' benchmark (being both synthetic and non-synthetic) following 3 charts were created, bolder lines represent RAW hashing i.e. without lookuping:
 
 Intel 3rd gen CPU:
 <img width="1566" height="1858" alt="i7-IvyBridge" src="https://github.com/user-attachments/assets/c043b392-1c8a-4afb-b009-f5f271cb188c" />
