@@ -179,7 +179,39 @@ FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla_ZMMmax:
 	jmp	.L146
 	.cfi_endproc
 ```
+    
+The FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla_ZMMmax dominates! It outperforms xxh3 by 64/41=1.56x 
+    
+```
+Setting CPU to performance mode...
+performance
+Size: 2398523392
+Read: 2398523392
+Hasher,BB_Size,Total_Hashes,Unique_Hashes,Collisions,Time_s,Speed_GBs,SpeedRAW_GBs
 
+// Let us compare the collisions for Fedora testdataset:
+
+Pippip_AES_TriXZi_Mikayla,	128,	2398523265,	1648394353,		750128912,	99.425,	2.876,	15.102
+Pippip_AES_TriXZi_Mikayla,	256,	2398523137,	1650915581,		747607556,	133.876,	4.272,	25.848
+Pippip_AES_TriXZi_Mikayla,	512,	2398522881,	1655018548,		743504333,	208.170,	5.494,	30.018
+Pippip_AES_TriXZi_Mikayla,	1024,	2398522369,	1661965052,		736557317,	404.595,	5.654,	30.865
+Pippip_AES_TriXZi_Mikayla,	2048,	2398521345,	1673883213,		724638132,	489.037,	9.355,	32.423
+Pippip_AES_TriXZi_Mikayla,	8192,	2398515201,	1694739980,		703775221,	959.925,	19.063,	32.793
+
+Pippip_AES_TriXZi_Mikayla_ZMMmax,	128,	2398523265,	1648406970,		750116295,	135.750,	2.106,	14.195 ! 750116295-750128912= -12,617 i.e. better than Pippip_AES_TriXZi_Mikayla
+Pippip_AES_TriXZi_Mikayla_ZMMmax,	256,	2398523137,	1650983359,		747539778,	138.650,	4.124,	18.868 ! 747539778-747607556= -67,778 i.e. better than Pippip_AES_TriXZi_Mikayla
+Pippip_AES_TriXZi_Mikayla_ZMMmax,	512,	2398522881,	1655034855,		743488026,	195.449,	5.852,	39.461 ! 743488026-743504333= -16,307 i.e. better than Pippip_AES_TriXZi_Mikayla
+Pippip_AES_TriXZi_Mikayla_ZMMmax,	1024,	2398522369,	1661953271,		736569098,	258.192,	8.859,	52.553 ! 736569098-736557317= 11,781
+Pippip_AES_TriXZi_Mikayla_ZMMmax,	2048,	2398521345,	1673890300,		724631045,	323.753,	14.131,	61.253 ! 724631045-724638132= -7,087 i.e. better than Pippip_AES_TriXZi_Mikayla
+Pippip_AES_TriXZi_Mikayla_ZMMmax,	8192,	2398515201,	1694717306,		703797895,	745.589,	24.543,	64.253 ! 703797895-703775221= 22,674
+
+XXH3_64bits 0.8.3,	128,	2398523265,	1648387301,		750135964,	210.107,	1.361,	8.906 ! 750135964-750116295= 19,669 i.e. worse than Pippip_AES_TriXZi_Mikayla_ZMMmax
+XXH3_64bits 0.8.3,	256,	2398523137,	1650961642,		747561495,	176.009,	3.249,	12.057 ! 747561495-747539778= 21,717 i.e. worse than Pippip_AES_TriXZi_Mikayla_ZMMmax
+XXH3_64bits 0.8.3,	512,	2398522881,	1655001212,		743521669,	248.454,	4.603,	18.357 ! 743521669-743488026= 33,643 i.e. worse than Pippip_AES_TriXZi_Mikayla_ZMMmax
+XXH3_64bits 0.8.3,	1024,	2398522369,	1661947538,		736574831,	287.056,	7.969,	25.772 ! 736574831-736569098= 5,733 i.e. worse than Pippip_AES_TriXZi_Mikayla_ZMMmax
+XXH3_64bits 0.8.3,	2048,	2398521345,	1673886241,		724635104,	642.147,	7.124,	33.020 ! 724635104-724631045= 4,059 i.e. worse than Pippip_AES_TriXZi_Mikayla_ZMMmax
+XXH3_64bits 0.8.3,	8192,	2398515201,	1694695692,		703819509,	969.465,	18.876,	40.195 ! 703819509-703797895= 21,614 i.e. worse than Pippip_AES_TriXZi_Mikayla_ZMMmax
+```
     
 With the included 'hashBBs_ver8_Fedora.tar.gz' benchmark (being both synthetic and non-synthetic) following 3 charts were created, bolder lines represent RAW hashing i.e. without lookuping:
 
