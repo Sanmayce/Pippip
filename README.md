@@ -180,7 +180,7 @@ FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla_ZMMmax:
 	.cfi_endproc
 ```
     
-The FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla_ZMMmax dominates! It outperforms xxh3 by 64/41=1.56x 
+The FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla_ZMMmax dominates! It outperforms xxh3 by 64/41=1.56x while maintaining less collisions while hashing Fedora42.iso testdatafile:
     
 ```
 Setting CPU to performance mode...
