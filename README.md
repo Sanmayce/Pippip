@@ -1,8 +1,5 @@
-# Pippip
-FASTEST AES-based hash function for hashtable lookups
-
 # Pippip_AES_TriXZi_Mikayla_ZMMmax
-The **fastest hash function for hashtable lookups**
+The **fastest (AES-based) hash function for hashtable lookups**
 
 ## Key Features
 - **Unmatched Speed**: 70 GiB/s (8 KB), 6 GiB/s (32 bytes) on Tiger Lake, leveraging 128-byte strides (2x64) via `_mm512_aesenc_epi128`.
