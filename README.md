@@ -2,6 +2,7 @@
 FASTEST AES-based hash function for hashtable lookups
 
 <img width="810" height="1158" alt="fastest" src="https://github.com/user-attachments/assets/f52af8d8-449e-4a2b-9d19-7ff3260bfa9a" />
+
     
 ```
 Testfile: Fedora-Workstation-Live-42-1.1.x86_64.iso, 2,398,523,392 bytes
@@ -10,8 +11,8 @@ Laptop: Dell Latitude 7420
 RAM: 8x4GB, Form Factor: Row Of Chips, Type: LPDDR4, Rank: 2, Configured Memory Speed: 4267 MT/s
 OS: Linux Fedora, as superuser in performance mode with maximum niceness
 ThrottlingWISE: It took 647 seconds to hash (and LOOKUP into 512 MB hashtable, 32bit big, each bit being a slot) the 8192 BBs
-                 (Building-Blocks) at each position with the Fastest hash 'Pippip_AES_TriXZi_Mikayla_ZMMmax' i.e.
-                 roughly 8192 x 2398523392 bytes =~ 18,299 GB or 18299/647 =~ 28 GiB/s hash-n-lookup
+                (Building-Blocks) at each position with the Fastest hash 'Pippip_AES_TriXZi_Mikayla_ZMMmax' i.e.
+                roughly 8192 x 2398523392 bytes =~ 18,299 GB or 18299/647 =~ 28 GiB/s hash-n-lookup
 +---------------------------------------+-[ Raw Hashing Speed, in GiB/s ]---------+----------[ Sorted ]-+
 | Hasher                                | for 32 bytes | for 512 bytes | for 8 KB | Collisions for 8 KB |
 +---------------------------------------+--------------+---------------+----------+---------------------+
@@ -23,6 +24,7 @@ ThrottlingWISE: It took 647 seconds to hash (and LOOKUP into 512 MB hashtable, 3
 | XXH3_64bits 0.8.3                     |        5.087 |        20.178 |   43.571 |         703,819,509 |
 +---------------------------------------+--------------+---------------+----------+---------------------+
 ```
+
     
 The 'FNV1A_Pippip_Yurii_OOO_128bit_AES_TriXZi_Mikayla_ZMMmax' monster GCC: (GNU) 15.1.1 assembler:  
 gcc -DZMM -static -O3 -march=tigerlake hashBBs_r9.c xxhash.c -o hashBBs_r9_GCC_tigerlakeZMM.elf  
