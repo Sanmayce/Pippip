@@ -16,7 +16,7 @@ ThrottlingWISE: It took 647 seconds to hash (and LOOKUP into 512 MB hashtable, 3
 | Hasher                                | for 32 bytes | for 512 bytes | for 8 KB | Collisions for 8 KB |
 +----------------------------------+--------------+---------------+----------+---------------------+
 | Pippip_AES_TriXZi_Mikayla             |          6.088 |            31.177 |      33.053 |              703,775,221 |
-| Pippip_AES_TriXZi_Mikayla_ZMMmax |               6.777 |            37.546 |      70.147 |              703,797,895 | ! RIDONKULOUS !
+| Pippip_AES_TriXZi_Mikayla_ZMMmax      |          6.777 |            37.546 |      70.147 |              703,797,895 |
 | wyhash f4                             |          5.299 |            15.711 |      19.332 |              703,804,152 |
 | MeowHash                              |          2.002 |            17.284 |      33.283 |              703,809,114 |
 | komihash 5.27                         |          4.659 |            12.251 |      14.746 |              703,811,325 |
