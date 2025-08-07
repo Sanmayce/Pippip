@@ -1,6 +1,15 @@
 # Pippip
 FASTEST AES-based hash function for hashtable lookups
 
+# Pippip_AES_TriXZi_Mikayla_ZMMmax
+The **fastest hash function for hashtable lookups**
+
+## Key Features
+- **Unmatched Speed**: 70 GiB/s (8 KB), 6 GiB/s (32 bytes) on Tiger Lake, leveraging 128-byte strides (2x64) via `_mm512_aesenc_epi128`.
+- **Low Collisions**: 703,797,895 collisions (8KB, Fedora dataset), better than XXH3’s 703,819,509.
+- **SMhasher Passed**: Robust distribution for lookups, validated by SMhasher (see https://github.com/rurban/smhasher/issues/322).
+- **x86-Only**: Optimized for Intel Tiger Lake (AVX-512 VAES); ARM/NEON ports welcome!
+  
 <img width="810" height="1158" alt="fastest" src="https://github.com/user-attachments/assets/f52af8d8-449e-4a2b-9d19-7ff3260bfa9a" />
 
     
