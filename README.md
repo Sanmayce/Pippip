@@ -2,7 +2,7 @@
 The **fastest (AES-based) hash function for hashtable lookups**
 
 ## Key Features
-- **Unmatched Speed**: 70 GiB/s (8 KB), 6 GiB/s (32 bytes) on i7-1185G7-UP3 (MAX TDP: 28 W), leveraging 128-byte strides (2x64) via `_mm512_aesenc_epi128`.
+- **Unmatched Speed**: 104 GiB/s (8 KB), 11 GiB/s (32 bytes) on i7-11850H (MAX TDP: 45 W), leveraging 128-byte strides (2x64) via `_mm512_aesenc_epi128`.
 - **Low Collisions**: 703,797,895 collisions (8KB, Fedora dataset), better than XXH3’s 703,819,509.
 - **SMhasher Passed**: Robust distribution for lookups, validated by SMhasher (see https://github.com/rurban/smhasher/issues/322).
 - **x86-Only**: Optimized for Intel Tiger Lake (AVX-512 VAES); ARM/NEON ports welcome!
