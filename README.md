@@ -1,6 +1,9 @@
 # Pippip_AES_TriXZi_Mikayla_ZMMmax
 The **fastest (AES-based) hash function for hashtable lookups**
 
+<img width="1029" height="1466" alt="Pippip_frontpage" src="https://github.com/user-attachments/assets/8ad28975-a01f-4b47-8670-233a47a4f023" />
+
+
 ## Key Features
 - **Unmatched Speed**: 104 GiB/s (8 KB), 11 GiB/s (32 bytes) on i7-11850H (MAX TDP: 45 W), leveraging 128-byte strides (2x64) via `_mm512_aesenc_epi128`.
 - **Low Collisions**: 703,797,895 collisions (8KB, Fedora dataset), better than XXH3’s 703,819,509.
